@@ -1,6 +1,6 @@
 ################################################################
 ##
-##   Content and DB backup script
+##   Content and DB backup script, uploading to s3
 ##   Written By: Karthick Raja Ramasamy
 ##   Last Update: May20 2021
 ##
