@@ -4,11 +4,11 @@ import boto3
 import os
 
 def upload_files(path):
-	session = boto3.Session(
-		aws_access_key_id='AKIARFGOY2ODIWDG6AHG',
-		aws_secret_access_key='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',
-
-	)
+#	session = boto3.Session(
+#		aws_access_key_id='',
+#		aws_secret_access_key='',
+	session = boto3.Session(profile_name='default')
+	default_s3_client = session.client('s3')
 
 	s3 = session.resource('s3')
 	bucket = s3.Bucket ('test-jackie')
